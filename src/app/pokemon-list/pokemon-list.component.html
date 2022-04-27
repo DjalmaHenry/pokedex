@@ -1,6 +1,12 @@
 <div class="body">
-  <app-pokemon-card></app-pokemon-card>
-  <app-pokemon-card></app-pokemon-card>
-  <app-pokemon-card></app-pokemon-card>
-  <app-pokemon-card></app-pokemon-card>
+  <div *ngFor="let pokemon of pokemons">
+    <app-pokemon-card [name]="pokemon.name" [number]="pokemon.number" [types]="pokemon.types" [image]="pokemon.image"></app-pokemon-card>
+  </div>
+
+  <!-- <div *ngFor="let pokemon of pokemons">
+    {{pokemon.name}}
+    {{pokemon.number}}
+    {{pokemon.types[0]}}
+    {{pokemon.image}}
+  </div> -->
 </div>
