@@ -1,0 +1,32 @@
+$padding: 0 10px;
+$font: "Nunito", sans-serif;
+
+.pokemon-card {
+  font-family: $font;
+  font-size: 80%;
+  padding-top: 2px;
+  color: black;
+}
+
+.pokemon-card__image {
+  background: #f2f2f2;
+  border-radius: 2px;
+}
+
+.pokemon-card__number {
+  padding: $padding;
+  color: #919191;
+}
+
+.pokemon-card__name {
+  padding: $padding;
+}
+
+.pokemon-card__types {
+  display: flex;
+}
+
+.pokemon-card__type {
+  margin: 0 10px;
+  padding: 5px;
+}

@@ -1,0 +1,7 @@
+$display-cards: flex;
+
+.body {
+  display: $display-cards;
+  flex-wrap: wrap;
+  margin-right: 2px;
+}
