@@ -1,16 +1,20 @@
 $padding: 0 10px;
-$font: "Nunito", sans-serif;
+$font: "Georgia", serif;
 
 .pokemon-card {
   font-family: $font;
   font-size: 80%;
   padding-top: 2px;
   color: black;
+  margin: 0 5px 50px;
+  width: 215px;
+  display: flex;
+  flex-direction: column;
 }
 
 .pokemon-card__image {
   background: #f2f2f2;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .pokemon-card__number {
@@ -20,6 +24,9 @@ $font: "Nunito", sans-serif;
 
 .pokemon-card__name {
   padding: $padding;
+  color: #313131;
+  font-size: 145%;
+  margin: 0.5em 0 5px;
 }
 
 .pokemon-card__types {
@@ -28,5 +35,12 @@ $font: "Nunito", sans-serif;
 
 .pokemon-card__type {
   margin: 0 10px;
-  padding: 5px;
+  width: 38.4375%;
+  height: 18px;
+  border-radius: 3px;
+  line-height: 18px;
+  max-width: 110px;
+  font-size: 11px;
+  text-align: center;
+  background: #87d197;
 }
