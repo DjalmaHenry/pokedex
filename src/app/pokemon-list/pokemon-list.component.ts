@@ -15,13 +15,7 @@ export class PokemonListComponent implements OnInit {
   ngOnInit(): void {
     this.pokemonService
       .getPokemon()
-      .pipe(
-        map((value) =>
-          value.results.map((pokemon: any) =>
-            this.pokemonService.getPokemonImg(pokemon.url)
-          )
-        )
-      )
+      .pipe(map((value) => value.results))
       .subscribe((r) => {
         this.pokemons = r;
       });
