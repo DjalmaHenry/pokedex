@@ -14,7 +14,7 @@ export class PokemonService {
     return this.httpClient.get<any>(this.url);
   }
 
-  getPokemonImg(urlImg: string) {
-    return this.httpClient.get<any>(urlImg);
-  }
+  // getPokemonImg(urlImg: string) {
+  //   return this.httpClient.get<any>(urlImg);
+  // }
 }

@@ -1,0 +1,76 @@
+.bg-full {
+  height: 100%;
+  width: 100% !important;
+  background-color: #f5db13 !important;
+}
+
+.title {
+  position: absolute;
+  left: 0.19%;
+  right: 1.74%;
+  top: 0%;
+  bottom: 54.76%;
+
+  /* h1 */
+
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 250px;
+  letter-spacing: 4px;
+
+  color: #000000;
+}
+
+.text {
+  // position: absolute;
+  // left: 0.19%;
+  // right: 0%;
+  // top: 56.73%;
+  // bottom: 50.34%;
+
+  /* h2 */
+
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 850px;
+  font-size: 20px;
+  line-height: 1px;
+  color: #000000;
+}
+
+.img-pokemon {
+  // position: static;
+  height: 300px;
+  left: 500px;
+  top: 70px;
+  bottom: -6%;
+}
+
+.img-pokeball {
+  height: 300px;
+  float: end;
+  margin-left: 230px;
+}
+
+button {
+  // position: absolute;
+  // left: 10%;
+  // right: 5%;
+  // top: 4%;
+  // bottom: 5%;
+  margin-top: 5px;
+  background: #73d677;
+  box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  margin-left: 300px;
+  margin-bottom: 500px;
+}
+
+footer {
+  display: flex;
+  grid-column: auto auto;
+  -ms-grid-column-align: start;
+}
