@@ -8,9 +8,10 @@ import { PokemonCardComponent } from './pokemon-list/pokemon-card/pokemon-card.c
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonService } from './services/pokemon.service';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, PokemonListComponent, PokemonCardComponent, HomeComponent],
+  declarations: [AppComponent, PokemonListComponent, PokemonCardComponent, HomeComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [PokemonService],
   bootstrap: [AppComponent],
