@@ -1,37 +1,22 @@
-.bg-full {
+.container {
   height: 100%;
   width: 100% !important;
   background-color: #f5db13 !important;
+  display: block;
 }
 
 .title {
-  position: absolute;
-  left: 0.19%;
-  right: 1.74%;
-  top: 0%;
-  bottom: 54.76%;
-
-  /* h1 */
-
   font-family: "Karla";
   font-style: normal;
-  font-weight: 100;
+  // font-weight: 100;
   font-size: 50px;
-  line-height: 250px;
-  letter-spacing: 4px;
-
+  // line-height: 250px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
   color: #000000;
 }
 
 .text {
-  // position: absolute;
-  // left: 0.19%;
-  // right: 0%;
-  // top: 56.73%;
-  // bottom: 50.34%;
-
-  /* h2 */
-
   font-family: "Karla";
   font-style: normal;
   font-weight: 400;
@@ -39,20 +24,29 @@
   font-size: 20px;
   line-height: 1px;
   color: #000000;
+  margin-top: 30px;
 }
 
 .img-pokemon {
-  // position: static;
   height: 300px;
   left: 500px;
   top: 70px;
   bottom: -6%;
+  // position: absolute;
+  // margin-right: 30px;
 }
 
 .img-pokeball {
-  height: 300px;
+  height: 200px;
   float: end;
-  margin-left: 230px;
+  // margin-left: 230px;
+  // position: absolute;
+}
+
+.imgs {
+  display: flex;
+  justify-content: end;
+
 }
 
 button {
