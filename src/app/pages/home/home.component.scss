@@ -1,0 +1,30 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+}
+
+.banner {
+  font-family: 'Karla', sans-serif;
+  padding: 10rem;
+
+  h1 {
+    width: 500px;
+    font-size: 3rem;
+    font-weight: 400;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  img {
+    width: 700px;
+    height: 530px;
+
+    position: relative;
+    top: -300px;
+    right: -40rem;
+  }
+}
