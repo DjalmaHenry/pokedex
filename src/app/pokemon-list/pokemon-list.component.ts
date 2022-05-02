@@ -10,8 +10,6 @@ import { PokemonService } from './../services/pokemon.service';
 export class PokemonListComponent implements OnInit {
   public pokemons!: Pokemon[];
 
-  teste: any;
-
   constructor(public pokemonService: PokemonService) {}
 
   ngOnInit(): void {
@@ -21,7 +19,5 @@ export class PokemonListComponent implements OnInit {
       .subscribe((r) => {
         this.pokemons = r;
       });
-
-    console.log('img:  ' + this.pokemonService.getPokemonImg('pikachu'));
   }
 }

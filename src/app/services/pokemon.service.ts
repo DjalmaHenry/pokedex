@@ -14,9 +14,7 @@ export class PokemonService {
     return this.httpClient.get<any>(this.url);
   }
 
-  getPokemonImg(pokemon: string): Observable<any> {
-    return this.httpClient.get<any>(
-      `https://img.pokemondb.net/artwork/large/${pokemon}.jpg`
-    );
-  }
+  // getPokemonImg(urlImg: string) {
+  //   return this.httpClient.get<any>(urlImg);
+  // }
 }
