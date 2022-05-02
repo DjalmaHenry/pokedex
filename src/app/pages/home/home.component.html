@@ -1,9 +1,32 @@
 <div class="body">
+  <div class="navbar">
+    <nav class="container">
+      <a>
+        <img class="logo-navbar" src="../../../assets/images/logo-navbar.png" alt="">
+      </a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title active">Início</a></li>
+          <li><a class="title" [routerLink]="['/pokedex']">Pokédex</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu">
+        <nb-icon icon="star"></nb-icon>
+      </div>
+      <div class="toggle icon-close">
+        <nb-icon icon="star"></nb-icon>
+      </div>
+    </nav>
+  </div>
+
   <div class="banner">
     <h1>
       <span>Encontre</span> todos os seus <span>Pokémons</span> favoritos.
     </h1>
-    <p></p>
-    <img src="../../../assets/images/home-banner.png" alt="pikachu">
+    <p>
+      Aqui você pode saber o tipo de Pokemon, seus pontos fortes, desvantagens e habilidades.
+    </p>
+    <button class="action-button" [routerLink]="['/pokedex']">Explorar Pokédex</button>
   </div>
+  <img class="home-banner" src="../../../assets/images/home-banner.png" alt="pikachu">
 </div>
