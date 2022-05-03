@@ -12,8 +12,12 @@ export class PokemonsService {
     private http: HttpClient,
   ) { }
 
-  public getPokemons(): Observable<IPokemons[]> {
-    return this.http.get<IPokemons[]>('https://pokeapi.co/api/v2/pokemon/?limit=151');
+  public getPokemons(): Observable<IPokemons> {
+    return this.http.get<IPokemons>('https://pokeapi.co/api/v2/pokemon/?limit=101');
+  }
+
+  public getMorePokemons(url: string): Observable<IPokemons> {
+    return this.http.get<IPokemons>(url);
   }
 
   public getPokemonInfoPrincipal(name: string): Observable<IPokemonInfoPrincipal> {

@@ -1,4 +1,9 @@
 export interface IPokemons {
+  next: string;
+  results: IResultPokemons[];
+}
+
+export interface IResultPokemons {
   name: string;
 }
 

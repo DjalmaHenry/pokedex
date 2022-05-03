@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pages',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
       <router-outlet></router-outlet>
     </section>
   `,
+})
+@Injectable({
+  providedIn: 'root'
 })
 export class PagesComponent implements OnInit {
 

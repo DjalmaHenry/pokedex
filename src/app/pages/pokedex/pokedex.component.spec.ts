@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { DebugElement, InjectionToken } from '@angular/core';
 
 import { PokedexComponent } from './pokedex.component';
 
@@ -11,7 +11,8 @@ xdescribe('PokedexComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PokedexComponent ]
+      declarations: [ PokedexComponent ],
+      providers: [{provide: InjectionToken, useValue: '', multi: true}]
     })
     .compileComponents();
   }));

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NbDialogService } from '@nebular/theme';
-import { Observable } from 'rxjs';
-import { IPokemonInfoPrincipal, IPokemons } from 'src/app/shared/interfaces/pokemons.model';
+import { IPokemonInfoPrincipal, IPokemons, IResultPokemons } from 'src/app/shared/interfaces/pokemons.model';
 import { PokemonsService } from 'src/app/shared/services/pokemons.service';
-import { PokemonInfoComponent } from './pokemon-info/pokemon-info.component';
 
 @Component({
   selector: 'app-pokedex',
@@ -12,25 +9,27 @@ import { PokemonInfoComponent } from './pokemon-info/pokemon-info.component';
 })
 export class PokedexComponent implements OnInit {
 
-  pokemons!: IPokemons[];
+  pokemons!: IResultPokemons[];
+  morePokemons!: string;
 
   constructor(
-    private pokemonsService: PokemonsService,
-    private dialogService: NbDialogService) { }
+    private pokemonsService: PokemonsService) { }
 
   ngOnInit() {
-    this.pokemonsService.getPokemons().subscribe(pokemons => this.pokemons = pokemons);
+    this.pokemonsService.getPokemons().subscribe(pokemons => {
+      this.pokemons = pokemons.results;
+      this.morePokemons = pokemons.next;
+    });
   }
 
   getPokemonImageUrl(name: string): string {
     return this.pokemonsService.getPokemonImageUrl(name);
   }
 
-  showPokemonInfo(name: string) {
-    this.dialogService.open(PokemonInfoComponent, {
-      context: {
-        name: name
-      }
+  getMorePokemons() {
+    this.pokemonsService.getMorePokemons(this.morePokemons).subscribe(pokemons => {
+      this.pokemons = this.pokemons.concat(pokemons.results);
+      this.morePokemons = pokemons.next;
     });
   }
 }
