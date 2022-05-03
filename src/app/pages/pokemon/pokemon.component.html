@@ -19,10 +19,40 @@
     </nav>
   </div>
 
-  <div class="pokemon">
+  <div class="pokemon" *ngIf="pokemonInfoPrincipal && pokemonInfoSecondary">
     <div class="image">
       <img [src]="getPokemonImageUrl(name)" alt="pokemon">
     </div>
-    <div class="info"></div>
+    <div class="info">
+      <div class="name">{{ name }}</div>
+
+      <div class="abilities">
+        <div class="title">Habilidades</div>
+        <div class="list">
+          <div class="ability" *ngFor="let ability of pokemonInfoPrincipal.abilities">
+            <div class="info-name">{{ ability.ability.name }}</div>
+          </div>
+      </div>
+
+      <div class="types">
+        <div class="title">Habilidades</div>
+        <div class="list">
+          <div class="type" *ngFor="let type of pokemonInfoPrincipal?.types">
+            <div class="info-name">{{ type.type.name }}</div>
+          </div>
+      </div>
+
+      <div class="placeholder">
+        <div class="title">Geração</div>
+        <div class="title">Habitat</div>
+        <div class="title">Corpo</div>
+      </div>
+
+      <div class="info-container">
+        <div class="info-name">{{ pokemonInfoSecondary.generation.name }}</div>
+        <div class="info-name">{{ pokemonInfoSecondary.habitat.name }}</div>
+        <div class="info-name">{{ pokemonInfoSecondary.shape.name }}</div>
+      </div>
+    </div>
   </div>
 </div>

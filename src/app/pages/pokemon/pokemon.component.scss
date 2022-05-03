@@ -173,5 +173,50 @@ nav.show div.icon-close {
 }
 
 .pokemon {
-  .image {}
+  display: flex;
+  flex-direction: row;
+
+  .image {
+    padding: 5rem;
+    img{
+      width: 80%;
+      border-radius: 20px;
+    }
+  }
+
+  .info {
+    font-family: 'Karla', sans-serif;
+    padding: 5rem;
+
+    .name{
+      font-weight: 800;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-name {
+      font-weight: 800;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .placeholder {
+    display: flex;
+    flex-direction: row;
+
+    .title {
+      margin-right: 170px;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+
+    .info-name {
+      margin-right: 30px;
+    }
+  }
 }

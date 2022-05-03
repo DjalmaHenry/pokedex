@@ -29,9 +29,6 @@ export interface IPokemonType {
 export interface IPokemonInfoSecondary {
   id: number;
   name: string;
-  color: {
-    name: string;
-  };
   generation: {
     name: string;
   };
