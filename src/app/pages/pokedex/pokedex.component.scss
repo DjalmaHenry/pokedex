@@ -181,6 +181,7 @@ nav.show div.icon-close {
 }
 
 nb-card {
+  cursor: pointer;
   width: 100px;
   height: 100px;
   display: flex;
@@ -217,6 +218,17 @@ nb-card {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+nb-card:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+
+  nb-card-footer {
+    transition: 0.2s;
+    background-color:#e8e8e8;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.18);
   }
 }
 

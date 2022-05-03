@@ -6,6 +6,7 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { NbCardModule, NbIconModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbIconModule,
     NbEvaIconsModule,
   ],
-  declarations: [PagesComponent, HomeComponent, PokedexComponent]
+  declarations: [PagesComponent, HomeComponent, PokedexComponent, PokemonComponent]
 })
 export class PagesModule { }

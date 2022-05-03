@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { PagesComponent } from "./pages.component";
 import { PokedexComponent } from "./pokedex/pokedex.component";
+import { PokemonComponent } from "./pokemon/pokemon.component";
 
 const routes: Routes = [{
   path: '',
@@ -15,6 +16,10 @@ const routes: Routes = [{
     {
       path: 'pokedex',
       component: PokedexComponent,
+    },
+    {
+      path: 'pokemon/:name',
+      component: PokemonComponent,
     },
   ],
 }];

@@ -20,7 +20,7 @@
   </div>
 
   <div class="pokemons-list" *ngIf="pokemons">
-    <nb-card *ngFor="let pokemon of pokemons">
+    <nb-card *ngFor="let pokemon of pokemons" [routerLink]="['/pokemon', pokemon.name]">
       <nb-card-body>
         <img [src]="getPokemonImageUrl(pokemon.name)" alt="pokemon">
       </nb-card-body>
