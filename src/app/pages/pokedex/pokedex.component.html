@@ -19,5 +19,14 @@
     </nav>
   </div>
 
-  <div class="pokemons-list"></div>
+  <div class="pokemons-list" *ngIf="pokemons">
+    <nb-card *ngFor="let pokemon of pokemons">
+      <nb-card-body>
+        <img [src]="getPokemonImageUrl(pokemon.name)" alt="pokemon">
+      </nb-card-body>
+      <nb-card-footer>
+        <span class="pokemon-name">{{ pokemon.name }}</span>
+      </nb-card-footer>
+    </nb-card>
+  </div>
 </div>
