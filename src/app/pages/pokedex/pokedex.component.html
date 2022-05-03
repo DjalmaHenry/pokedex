@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="navbar">
+    <nav class="container">
+      <a>
+        <img class="logo-navbar" src="../../../assets/images/logo-navbar.png" alt="">
+      </a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" [routerLink]="['/']">Início</a></li>
+          <li><a class="title active">Pokédex</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu">
+        <nb-icon icon="menu-outline"></nb-icon>
+      </div>
+      <div class="toggle icon-close">
+        <nb-icon icon="close-outline"></nb-icon>
+      </div>
+    </nav>
+  </div>
+
+  <div class="pokemons-list" *ngIf="pokemons">
+    <nb-card *ngFor="let pokemon of pokemons" [routerLink]="['/pokemon', pokemon.name]">
+      <nb-card-body>
+        <img [src]="getPokemonImageUrl(pokemon.name)" alt="pokemon">
+      </nb-card-body>
+      <nb-card-footer>
+        <span class="pokemon-name">{{ pokemon.name }}</span>
+      </nb-card-footer>
+    </nb-card>
+  </div>
+
+  <div class="action-button">
+    <button (click)="getMorePokemons()">Carregar mais pokémons</button>
+  </div>
+</div>

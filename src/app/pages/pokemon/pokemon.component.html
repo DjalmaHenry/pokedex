@@ -1,0 +1,58 @@
+<div class="body">
+  <div class="navbar">
+    <nav class="container">
+      <a>
+        <img class="logo-navbar" src="../../../assets/images/logo-navbar.png" alt="">
+      </a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" [routerLink]="['/']">Início</a></li>
+          <li><a class="title" [routerLink]="['/pokedex']">Pokédex</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu">
+        <nb-icon icon="menu-outline"></nb-icon>
+      </div>
+      <div class="toggle icon-close">
+        <nb-icon icon="close-outline"></nb-icon>
+      </div>
+    </nav>
+  </div>
+
+  <div class="pokemon" *ngIf="pokemonInfoPrincipal && pokemonInfoSecondary">
+    <div class="image">
+      <img [src]="getPokemonImageUrl(name)" alt="pokemon">
+    </div>
+    <div class="info">
+      <div class="name">{{ name }}</div>
+
+      <div class="abilities">
+        <div class="title">Habilidades</div>
+        <div class="list">
+          <div class="ability" *ngFor="let ability of pokemonInfoPrincipal.abilities">
+            <div class="info-name">{{ ability.ability.name }}</div>
+          </div>
+      </div>
+
+      <div class="types">
+        <div class="title">Habilidades</div>
+        <div class="list">
+          <div class="type" *ngFor="let type of pokemonInfoPrincipal?.types">
+            <div class="info-name">{{ type.type.name }}</div>
+          </div>
+      </div>
+
+      <div class="placeholder">
+        <div class="title">Geração</div>
+        <div class="title">Habitat</div>
+        <div class="title">Corpo</div>
+      </div>
+
+      <div class="info-container">
+        <div class="info-name">{{ pokemonInfoSecondary.generation.name }}</div>
+        <div class="info-name">{{ pokemonInfoSecondary.habitat.name }}</div>
+        <div class="info-name">{{ pokemonInfoSecondary.shape.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>
