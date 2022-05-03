@@ -1,3 +1,28 @@
-<p>
-  pokemon works!
-</p>
+<div class="body">
+  <div class="navbar">
+    <nav class="container">
+      <a>
+        <img class="logo-navbar" src="../../../assets/images/logo-navbar.png" alt="">
+      </a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" [routerLink]="['/']">Início</a></li>
+          <li><a class="title" [routerLink]="['/pokedex']">Pokédex</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu">
+        <nb-icon icon="menu-outline"></nb-icon>
+      </div>
+      <div class="toggle icon-close">
+        <nb-icon icon="close-outline"></nb-icon>
+      </div>
+    </nav>
+  </div>
+
+  <div class="pokemon">
+    <div class="image">
+      <img [src]="getPokemonImageUrl(name)" alt="pokemon">
+    </div>
+    <div class="info"></div>
+  </div>
+</div>

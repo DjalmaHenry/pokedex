@@ -13,11 +13,11 @@
   margin-bottom: 2rem;
   display: flex;
 
-  position: fixed;
   top: 0;
   left: 0;
   background-color: #F5DB13;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .navbar.scroll {
@@ -174,7 +174,7 @@ nav.show div.icon-close {
 
 .pokemons-list {
   width: 100%;
-  margin: 6rem 1.5rem;
+  margin: 0 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
@@ -218,6 +218,12 @@ nb-card {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    span {
+      font-size: 0.8rem;
+      font-weight: 400;
+      font-family: 'Karla', sans-serif;
+    }
   }
 }
 
@@ -244,7 +250,7 @@ nb-card:hover {
     cursor: pointer;
     width: 300px;
     padding: 1rem;
-    margin: -2rem 0 5rem 0;
+    margin: 2rem 0 5rem 0;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;

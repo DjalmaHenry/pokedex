@@ -12,8 +12,7 @@ export class PokedexComponent implements OnInit {
   pokemons!: IResultPokemons[];
   morePokemons!: string;
 
-  constructor(
-    private pokemonsService: PokemonsService) { }
+  constructor(private pokemonsService: PokemonsService) { }
 
   ngOnInit() {
     this.pokemonsService.getPokemons().subscribe(pokemons => {
