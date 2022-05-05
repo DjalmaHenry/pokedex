@@ -45,10 +45,12 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Angular](https://reactjs.org)
+- [Angular](https://angular.io/docs)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [Nebular](https://firebase.google.com/)
+- [Nebular](https://akveo.github.io/nebular/)
+
+Também foi usada a [API de pokémons](https://pokeapi.co/) publica para pegar todas informações de pokémons.
 
 ## 💻 Projeto
 
