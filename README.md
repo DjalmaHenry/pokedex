@@ -1,6 +1,3 @@
-# pokedex
-
-
 <h1 align="center">
   <a href="https://letmeask-139d1.web.app/">
     <img alt="pokemon" title="pokedex" src="https://the-best-pokedex.vercel.app/assets/images/logo-navbar.png" width="40%" />
